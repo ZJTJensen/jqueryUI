@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    border: 5px solid burlywood;
+    border-radius: 10px;
+    width: 75%;
+    height:100%;
+    margin: 0 auto;
+}
+
+#lower{
+    border-top: 5px solid burlywood;
+    height: auto;
+    background-color: rgb(128, 128, 128);
+
+}
+#upper{
+    background: url("background.jpg");
+    height:500px;
+    width: 100%;
+
+}
+
+.person{
+    border: 0;
+    vertical-align: right;
+    display: none;
+    text-align: right;
+    margin: 25% 0 0 75%;
+}
+body{
+    background: url(mystical.jpg);
+}
+
+#stats{
+    border: 0px solid burlywood;
+    /* padding: 0 0 0 5%; */
+   
+    height: auto;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+#text{
+    width: 50%;
+    height: auto;
+    display: inline-block;
+}
+h1{
+    border-bottom: 1px solid black;
+}
+
+
+
+
+h3{
+    border: 1px solid burlywood;
+    padding: 0 0 0 5%;
+    background-color: rgba(68, 67, 67, 0.582);
+}
+p{
+    padding: 0 0 0 2%;
+}
+button{
+    margin: 0 0 0 2%;
+}
+
+#dialog{
+    background-color: rgba(128, 128, 128, 0.767);
+}

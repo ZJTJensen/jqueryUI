@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(function(){
+            $("#text").accordion();
+        });
+        $(document).on("click", "button", function(){
+           if($(this).attr('id') == "Questiona"){
+            $("#dialog").css('border', '2px solid burlywood');
+                $("#dialog").append("<p '>&nbsp;You are in the elemental plain. Welcome adventruer if you have any questions you may ask me any of them and i will answer to my best. as to how you got here that is in itself a mystery, not many mortals may travers this relm.</p>");
+                console.log("hello");
+            
+           }
+           if($(this).attr('id') == "Questionb"){
+            $("#dialog").css( 'border', '2px solid burlywood');
+                $("#dialog").append("<p '>&nbsp;I? I am but a mear elemental that has made its home here on this plain. Do you have any more questions mortal?</p>");
+           }
+           if($(this).attr('id') == "Questionc"){
+            $("#dialog").css( 'border', '2px solid burlywood');
+                $("#dialog").append("<p '>&nbsp;That seems like a silly question but i do not have any knowldge of this place. Even though i live here it is a simple relm that dose not require much from us.</p>");
+           }
+            $("#dialog").dialog();
+
+        });
+
+    
+            $(".person").animate({
+               
+                left: "+=50",
+                height: "toggle"
+              }, 5000, function() {
+                // Animation complete.
+              });
+        
+
+     
+
+    });
+    </script>
+</head>
+<body>
+    <div id= "wrapper">
+        <div id = "upper">
+            <img class="person" src="Dunmer.png">
+            <div id="dialog">
+            </div>
+        </div>
+        <div id= "lower">
+            <div id="text">
+               <h3>Question 1 &nbsp; &darr;</h3> 
+                <div>
+                    <p>
+                        Where am I? How did I get here?
+                    
+                    </p>
+                        <button id ="Questiona">This question</button>     
+                    
+                </div>
+        
+            
+                <h3>Question 2  &nbsp; &darr;</h3> 
+                 <div>
+                     <p>
+                         Who are you?
+                     
+                     </p>
+                         <button id ="Questionb">This question</button>     
+                     
+                 </div>
+            
+            
+                <h3>Question 3  &nbsp; &darr;</h3> 
+                 <div>
+                     <p>
+                        Do you know of any important happenings in town?
+                     
+                     </p>
+                        <button id ="Questionc" style = "margin: 0 0 15px 2%;">This question</button>     
+                     
+                 </div>
+            </div>
+            <div id= "stats">
+                <h1>NAME:</h1>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
